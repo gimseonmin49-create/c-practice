@@ -1,16 +1,16 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int main(void) {
-	int n;
-	printf("숫자를 입력하세요: ");
-	scanf("%d", &n);
+int main() {
+	int a, b;
+	printf("정수 두 개를 입력하세요: ");
+	scanf("%d %d", &a, &b);
 
-	if (n % 2 == 0) {
-		printf("짝수\n");
+	if (a > b) {
+		printf("큰 수: %d\n", a);
 	}
 	else {
-		printf("홀수\n");
+		printf("큰 수: %d\n", b);
 	}
 	return 0;
 }
